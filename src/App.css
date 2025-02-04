@@ -1,11 +1,13 @@
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px; */
+  width: 100vw;
+  height: 100vh;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
   text-align: center;
 }
 
-.logo {
+/* .logo {
   height: 6em;
   padding: 1.5em;
   will-change: filter;
@@ -16,7 +18,7 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
-}
+} */
 
 @keyframes logo-spin {
   from {
@@ -40,3 +42,61 @@
 .read-the-docs {
   color: #888;
 }
+
+.button-style {
+  border-radius: 2rem; /* equivalent to rounded-2xl */
+  border: 2px; /* equivalent to border-2 border-dashed border-black */
+  background-color: white;
+  padding: 6px 12px; /* equivalent to px-6 */
+  font-size: 1.1rem; /* equivalent to font-semibold */
+  /* text-transform: uppercase; equivalent to uppercase */
+  color: black;
+  transition: all 0.3s; /* equivalent to transition-all duration-300 */
+}
+
+.button-style:hover{
+  transform: translateX(-4px) translateY(-4px);
+  border-radius: 1rem; /* equivalent to hover:rounded-md */
+  box-shadow: 4px 4px 0px black;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.button-style.active{
+  transform: translateX(0) translateY(0);
+  border-radius: 2rem; /* equivalent to active:rounded-2xl */
+  box-shadow: none;
+}
+
+.linkedin, .github, .insta, .spotify {
+  transition: all 0.3s;
+  cursor: pointer;
+  /* color: black; */
+}
+
+.linkedin:hover, .insta:hover, .github:hover, .spotify:hover {
+  transform: translateX(-4px) translateY(-4px);
+  opacity: 0.6;
+  /* color: black; */
+  /* color: grey; */
+  /* box-shadow: 2px 2px 5px black; */
+}
+
+.linkedin:hover:active, .insta:hover:active, .github:hover:active, .spotify:hover:active {
+  transform: translateX(-4px) translateY(-4px);
+  opacity: 0.8;
+  /* color: black; */
+}
+
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* This makes sure the background covers the full viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
