@@ -18,7 +18,7 @@ function App() {
 function ProfileCard(){
   return(
     <div style={{width : "400px", height : "500px", borderRadius : "5px", backgroundColor : "#30336b"}}>
-      <img src="./src/assets/v.jpg" alt="" style={{width : "100px", height : "100px", borderRadius : "50px",
+      <img src="/v.jpg" alt="" style={{width : "100px", height : "100px", borderRadius : "50px",
         marginTop : "30px",
       }}/>
       <div style={{color : "white", fontSize : "25px", fontFamily : "monospace"}}>Web Developer</div>
